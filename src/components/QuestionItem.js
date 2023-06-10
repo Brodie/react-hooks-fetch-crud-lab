@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionItem({ question }) {
+export default function QuestionItem({ question }) {
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
@@ -21,5 +21,3 @@ function QuestionItem({ question }) {
     </li>
   );
 }
-
-export default QuestionItem;
