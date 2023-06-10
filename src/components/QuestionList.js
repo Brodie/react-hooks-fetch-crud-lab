@@ -1,9 +1,16 @@
 import React from "react";
 import QuestionItem from "./QuestionItem";
 
-function QuestionList({ questions }) {
+function QuestionList({ questions, onQuestionDelete, onHandleUpdateAnswer }) {
   const questionsToDisplay = questions.map((question) => {
-    return <QuestionItem key={question.id} question={question}></QuestionItem>;
+    return (
+      <QuestionItem
+        key={question.id}
+        question={question}
+        onQuestionDelete={onQuestionDelete}
+        onHandleUpdateAnswer={onHandleUpdateAnswer}
+      ></QuestionItem>
+    );
   });
 
   return (

@@ -65,17 +65,6 @@
         "controlled"
       ],
       "correctIndex": 1
-    },
-    {
-      "prompt": "ten plus 10",
-      "answers": [
-        "12",
-        "13",
-        "14",
-        "20"
-      ],
-      "correctIndex": "3",
-      "id": 7
     }
   ]
 }
